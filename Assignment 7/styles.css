@@ -1,0 +1,32 @@
+:root {
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --border: #cbd5e1;
+  --text: #111827;
+  --primary: #2563eb;
+  --accent: #227f9f;
+  --highlight: #e2e8f0;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); font-family: Inter, system-ui, sans-serif; color: var(--text); }
+
+.wrapper { width: min(96vw, 780px); background: var(--card); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 24px rgba(15,23,42,.12); padding: 22px; }
+
+h1 { margin-top: 0; text-align: center; }
+
+.controls, .action-buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 12px; }
+
+label { display: inline-flex; align-items: center; gap: 6px; }
+
+input[type="number"] { width: 80px; padding: 8px; border: 1px solid var(--border); border-radius: 8px; }
+
+button { border: none; border-radius: 8px; padding: 10px 14px; font-weight: 600; cursor: pointer; background: var(--primary); color: white; }
+
+button:disabled { opacity: 0.56; cursor: not-allowed; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+
+td, th { border: 1px solid var(--border); padding: 8px; text-align: center; }
+
+tr.even-highlight { background: var(--highlight); }
