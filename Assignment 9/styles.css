@@ -1,0 +1,33 @@
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --border: #d1d5db;
+  --text: #111827;
+  --danger: #dc2626;
+  --success: #16a34a;
+  --primary: #2563eb;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--text); }
+
+.form-wrapper { width: min(94vw, 420px); background: var(--card); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.15); padding: 24px; }
+
+h1 { margin-top: 0; text-align: center; }
+
+.field { margin-bottom: 16px; }
+
+label { display: block; margin-bottom: 6px; font-weight: 600; }
+
+input { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 8px; }
+
+input.invalid { border-color: var(--danger); }
+
+.error { margin: 6px 0 0; color: var(--danger); font-size: 0.9rem; min-height: 1.1rem; }
+
+button { width: 100%; background: var(--primary); color: white; border: none; border-radius: 8px; padding: 10px; font-weight: 600; cursor: pointer; }
+
+.success { margin-top: 12px; color: var(--success); font-weight: 600; text-align: center; }
+
+.hidden { display: none; }
