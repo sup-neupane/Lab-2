@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Marks & Grade Analyzer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Student Marks & Grade Analyzer</h1>
+
+    <form id="student-form" class="student-form">
+      <div class="form-grid">
+        <label>Name <input id="name" type="text" required /></label>
+        <label>Roll No <input id="roll" type="text" required /></label>
+        <label>Math <input id="math" type="number" min="0" max="100" required /></label>
+        <label>Science <input id="science" type="number" min="0" max="100" required /></label>
+        <label>English <input id="english" type="number" min="0" max="100" required /></label>
+        <label>History <input id="history" type="number" min="0" max="100" required /></label>
+        <label>Geography <input id="geography" type="number" min="0" max="100" required /></label>
+      </div>
+      <div class="form-actions">
+        <button type="submit" id="add-student">Add Student</button>
+        <button type="button" id="clear-all">Clear All Students</button>
+      </div>
+    </form>
+
+    <div class="results-wrapper">
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Total</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
