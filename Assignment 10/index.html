@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color & Theme Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="theme-wrapper">
+    <h1>Event-Driven Color & Theme Manager</h1>
+    <div class="picker-row">
+      <label>Background Color <input id="bgColor" type="color" value="#f9fafb" /></label>
+      <label>Text Color <input id="textColor" type="color" value="#111827" /></label>
+      <label>Button Color <input id="buttonColor" type="color" value="#2563eb" /></label>
+    </div>
+    <div class="btn-row">
+      <button id="applyTheme">Apply Theme</button>
+      <button id="resetTheme">Reset Theme</button>
+    </div>
+
+    <div class="theme-status">
+      <h2>Active Theme Object</h2>
+      <pre id="themeOutput"></pre>
+    </div>
+
+    <div class="sample-content">
+      <p>This is a sample paragraph to preview text and background colors.</p>
+      <button class="sample-btn">Sample Button</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
